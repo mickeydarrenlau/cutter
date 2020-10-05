@@ -64,7 +64,7 @@ body{
    
     &__input {
       margin: 1.5rem;
-    
+      margin-top: 3.2rem;
       width: 45vw;
       border: 2px solid rgba($color-black, 0.02);
       border-radius: 1000px;
@@ -77,15 +77,22 @@ body{
       @media screen and (max-width:$bp-big) {
         padding: .6rem 1.2rem;
         width: 50vw;
+        
+      }
+     
+      @media screen and (max-width:$bp-smallest) {
+       
+        margin-bottom: 1.8rem;
+        width: 70vw;
+        margin-top: 2.4rem;
       }
       @media screen and (max-width:$bp-thin) {
-        padding: .4rem 1rem;
-          margin-bottom: 1.2rem;
+         padding: .4rem 1rem;
+          margin-bottom: 1.5rem;
+          margin-top: rem;
+          width: 75vw;
       }
-      @media screen and (max-width:$bp-smallest) {
-        margin: 01rem;
-        width: 65vw;
-      }
+  
       transition: background 0.3s ease;
       &:hover {
         filter: brightness(110%); 
@@ -108,11 +115,12 @@ body{
       padding: 0.8rem 1.5rem;
       &-box{
         display: inline-block;
-       
       }
       @media screen and (max-width:$bp-big) {
-        padding: .6rem 1.2rem;
-        
+        padding: .6rem 1.2rem; 
+      }
+      @media screen and (max-width:$bp-thin) {
+        padding: 0.4rem 1rem
       }
       margin-right: 0.6rem;
       border-radius: 1000px;
@@ -147,7 +155,12 @@ body{
       @media screen and (max-width:$bp-big) {
         font-size: .6rem;
         width: 60%;
+        
       }
+      @media screen and (max-width:$bp-thin) {
+        width: 75%;
+      }
+      
       
       transform: translateY(25vh);
       a {
