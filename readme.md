@@ -8,13 +8,12 @@
 
 
 #  Cutter
+
 This is my own javascript URL shorter, made with just html/css/javascript and [Jsonbox.io](https://jsonbox.io) (to save the URL and releted data for 30 days);
 
  ## Demo
-
-[![css-loaders-screenshot](https://raw.githubusercontent.com/lukehaas/css-loaders/step2/images/css-loaders-screenshot)](http://projects.lukehaas.me/css-loaders)
-
-> [Check it live](http://henriquechigumane.github.io/cutter).
+> [
+Check it live](http://henriquechigumane.github.io/cutter).
 
 ## Contributing
 
@@ -25,8 +24,8 @@ This is my own javascript URL shorter, made with just html/css/javascript and [J
 5. Submit a pull request :);
 
 ## License
- This project is under the [MIT License](https://github.com/henriquechigumane/cutter/LICENSE);
+ This project is under the [MIT License](https://github.com/HenriqueChigumane/cutter/blob/master/LICENSE);
  
- Made With love by [Mister Paps]((https://instagram.com/themisterpaps);)
+ Made With 🍩 by [Mister Paps]((https://instagram.com/themisterpaps);)
 
 
