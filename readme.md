@@ -25,8 +25,8 @@ This is my own javascript URL shorter, made with just html/css/javascript and [J
 5. Submit a pull request :);
 
 ## License
- This project is under the [MIT License](https://github.com/henriquechigumane/cutter/LICENSE);
+ This project is under the [MIT License](https://github.com/HenriqueChigumane/cutter/blob/master/LICENSE);
  
- Made With love by [Mister Paps]((https://instagram.com/themisterpaps);)
+ Made With 🍩 by [Mister Paps]((https://instagram.com/themisterpaps);)
 
 
