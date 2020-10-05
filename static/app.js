@@ -20,6 +20,9 @@ function getUrl(e) {
     return url;
   } else {
       input.classList.add("error");
+      setTimeout(() => {
+        input.classList.remove("error");
+      }, 1000);
      input.placeholder="Invalid URL";
      input.value=input.value;
     return false

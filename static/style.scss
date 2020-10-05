@@ -1,13 +1,30 @@
-$color-primary: #09b5a5;
+$color-primary: #23c29c;
 $color-grey: grey;
 $color-black: #000000;
+$colo-secondary:#1f293b;
 $color-white: #fff;
 $font-primary: "Poppins";
+$bp-large:1000px;
+$bp-big:895px;
+$bp-small:720px;
+$bp-smallest:470px;
+$bp-thin:380px;
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: $font-primary;
+}
+body{
+  @media screen and (max-width:$bp-large) {
+    font-size: 12px; 
+  }
+  @media screen and (max-width:$bp-big) {
+    font-size: 10px; 
+  }
+  @media screen and (max-width:$bp-small) {
+    font-size: 8px; 
+  }
 }
 .ds- {
   display: flex;
@@ -20,24 +37,51 @@ $font-primary: "Poppins";
     align-items: center;
     &__logo {
       display: block;
-      width: 32rem;
+      width: 30rem;
+      @media screen and (max-width:$bp-large) {
+        width: 24rem; 
+      }
+      @media screen and (max-width:$bp-big) {
+        width: 20rem; 
+      }
+      @media screen and (max-width:$bp-small) {
+        width: 16rem; 
+      }
+      @media screen and (max-width:$bp-smallest) {
+        width: 14rem; 
+      }
+      @media screen and (max-width:$bp-thin) {
+        width: 13rem; 
+      }
+  
       img {
         width: 100%;
         height: auto;
       }
     }
-    &__form {
-      display: block;
-    }
+   
     &__input {
       margin: 1.5rem;
+      @media screen and (max-width:$bp-smallest) {
+        margin: 01rem
+      }
       width: 45vw;
       border: 2px solid rgba($color-black, 0.02);
       border-radius: 1000px;
-      background-color: rgba($color-grey, 0.18);
-      color: rgba($color-grey, 0.6);
+      // background-color: rgba($color-grey, 0.18);
+      background-color: $colo-secondary;
+      // color: rgba($color-grey, 0.6);
+      color: rgba($color-white, 0.6);
       padding: 0.8rem 1.5rem;
       margin-right: 0.5rem;
+      @media screen and (max-width:$bp-big) {
+        padding: .6rem 1.2rem;
+        width: 50vw;
+      }
+      @media screen and (max-width:$bp-thin) {
+        padding: .4rem 1rem;
+        width: 45vw;
+      }
       transition: background 0.3s ease;
       &:hover {
         filter: brightness(110%); 
@@ -55,8 +99,15 @@ $font-primary: "Poppins";
         border: 2px solid $color-primary;
       }
     }
+    &__form{
+      display: flex;
+      background: red;
+    }
     &__buttom {
       padding: 0.8rem 1.5rem;
+      @media screen and (max-width:$bp-big) {
+        padding: .6rem 1.2rem;
+      }
       margin-right: 0.6rem;
       border-radius: 1000px;
       border: none;
@@ -80,7 +131,12 @@ $font-primary: "Poppins";
       color: rgba($color-grey, 1);
       font-weight: 300;
       font-size: 0.7rem;
-      transform: translateY(130%);
+      @media screen and (max-width:$bp-big) {
+        font-size: .6rem;
+        width: 60%;
+      }
+      
+      transform: translateY(30vh);
       a {
         color: rgba($color-primary, 1);
       }
@@ -91,7 +147,10 @@ $font-primary: "Poppins";
   &_copy {
     border-radius: 1000px;
     padding: 0.4rem 0.8rem 0.8rem 0.8rem;
-    background-color: rgb(129, 129, 129);
+    @media screen and (max-width:$bp-big) {
+      padding: 0.2rem 0.6rem 0.6rem 0.6rem;
+    }
+    background-color: #1f293b;
     > svg {
       transform: translateY(6px);
     }
