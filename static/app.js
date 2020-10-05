@@ -67,12 +67,12 @@ function changeUi(id) {
     <rect x="8" y="8" width="12" height="12" rx="2" />
     <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
 </svg>`;
-  form.appendChild(tempBtn_copy);
+form.querySelector("#ds-searcher__buttom-box").appendChild(tempBtn_copy);
 
   let tempBtn_new = btn.cloneNode(true);
   tempBtn_new.id = "url_new";
   tempBtn_new.textContent = "New";
-  form.appendChild(tempBtn_new);
+  form.querySelector("#ds-searcher__buttom-box").appendChild(tempBtn_new);
   tempBtn_copy.addEventListener("click", (e)=>{
       e.preventDefault();
       body.className="slideAnimation";
@@ -84,8 +84,8 @@ function changeUi(id) {
   tempBtn_new.addEventListener("click", (e,shortulr)=>{
       e.preventDefault();
       input.value="";
-      form.removeChild(tempBtn_copy);
-      form.removeChild(tempBtn_new);
+      form.querySelector("#ds-searcher__buttom-box").removeChild(tempBtn_copy);
+      form.querySelector("#ds-searcher__buttom-box").removeChild(tempBtn_new);
       form.appendChild(btn);
   });
 }

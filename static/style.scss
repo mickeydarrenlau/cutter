@@ -7,7 +7,7 @@ $font-primary: "Poppins";
 $bp-large:1000px;
 $bp-big:895px;
 $bp-small:720px;
-$bp-smallest:470px;
+$bp-smallest:500px;
 $bp-thin:380px;
 * {
   padding: 0;
@@ -21,9 +21,11 @@ body{
   }
   @media screen and (max-width:$bp-big) {
     font-size: 10px; 
+    overflow: hidden;
   }
   @media screen and (max-width:$bp-small) {
     font-size: 8px; 
+   
   }
 }
 .ds- {
@@ -37,18 +39,18 @@ body{
     align-items: center;
     &__logo {
       display: block;
-      width: 30rem;
+      width: 28rem;
       @media screen and (max-width:$bp-large) {
         width: 24rem; 
       }
       @media screen and (max-width:$bp-big) {
-        width: 20rem; 
+        width: 19rem; 
       }
       @media screen and (max-width:$bp-small) {
-        width: 16rem; 
+        width: 18rem; 
       }
       @media screen and (max-width:$bp-smallest) {
-        width: 14rem; 
+        width: 16rem; 
       }
       @media screen and (max-width:$bp-thin) {
         width: 13rem; 
@@ -62,9 +64,7 @@ body{
    
     &__input {
       margin: 1.5rem;
-      @media screen and (max-width:$bp-smallest) {
-        margin: 01rem
-      }
+    
       width: 45vw;
       border: 2px solid rgba($color-black, 0.02);
       border-radius: 1000px;
@@ -80,7 +80,11 @@ body{
       }
       @media screen and (max-width:$bp-thin) {
         padding: .4rem 1rem;
-        width: 45vw;
+          margin-bottom: 1.2rem;
+      }
+      @media screen and (max-width:$bp-smallest) {
+        margin: 01rem;
+        width: 65vw;
       }
       transition: background 0.3s ease;
       &:hover {
@@ -99,14 +103,16 @@ body{
         border: 2px solid $color-primary;
       }
     }
-    &__form{
-      display: flex;
-      background: red;
-    }
+  
     &__buttom {
       padding: 0.8rem 1.5rem;
+      &-box{
+        display: inline-block;
+       
+      }
       @media screen and (max-width:$bp-big) {
         padding: .6rem 1.2rem;
+        
       }
       margin-right: 0.6rem;
       border-radius: 1000px;
@@ -124,6 +130,13 @@ body{
         outline: none;
       }
     }
+    &__form{
+      @media screen and (max-width:$bp-smallest) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
     &__legal {
       text-align: center;
       justify-self: flex-end;
@@ -136,7 +149,7 @@ body{
         width: 60%;
       }
       
-      transform: translateY(30vh);
+      transform: translateY(25vh);
       a {
         color: rgba($color-primary, 1);
       }
