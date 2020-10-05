@@ -3,7 +3,7 @@ const btn = document.querySelector("#url_btn");
 // const btn_copy=document.querySelector("#url_copy");
 // const btn_new=document.querySelector("#url_new");
 const form = btn.closest("form");
-const myCutter = "http://misterpaps.me/cutter/v/";
+const myCutter = "http://misterpaps.me/cutter/v/#";
 const body =document.querySelector("body");
 function getRandomId() {
   return (
@@ -33,8 +33,8 @@ function run(e) {
       return
       console.log("re")
   }
-  let id = getRandomId();
-  sendData(url, id);
+  let ids = getRandomId();
+  sendData(url, ids);
 }
 
 function sendData(url, id) {

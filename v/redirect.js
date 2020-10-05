@@ -11,12 +11,14 @@ function getUrl(ed) {
     )
 }
 function getPahtId (){
-    let path = window.location.pathname;
+    let path = window.location.hash;
     console.log(path);
     if(path=="/"){
         return "";
+        console.log("none")
     }
-    return path.pathname.split("/")[3];
+    //return path.pathname.split("/")[3];
+   return path.split("#")[1]
 }
 const pathId= getPahtId();
 getUrl(endpoint+"/?q=id:"+pathId);
