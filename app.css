@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.ds- {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90vh;
+}
+
+.ds-searcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ds-searcher__logo {
+  display: block;
+  width: 32rem;
+}
+
+.ds-searcher__logo img {
+  width: 100%;
+  height: auto;
+}
+
+.ds-searcher__form {
+  display: block;
+}
+
+.ds-searcher__input {
+  margin: 1.5rem;
+  width: 45vw;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  border-radius: 1000px;
+  background-color: rgba(128, 128, 128, 0.18);
+  color: rgba(128, 128, 128, 0.6);
+  padding: 0.8rem 1.5rem;
+  margin-right: 0.5rem;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+.ds-searcher__input:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+  background: #09b5a5;
+  color: #fff;
+}
+
+.ds-searcher__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ds-searcher__input:hover + button {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #09b5a5;
+  border: 2px solid #09b5a5;
+}
+
+.ds-searcher__buttom {
+  padding: 0.8rem 1.5rem;
+  margin-right: 0.6rem;
+  border-radius: 1000px;
+  border: none;
+  background-color: #09b5a5;
+  font-weight: 600;
+  color: white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.ds-searcher__buttom:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+  -webkit-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+.ds-searcher__buttom:focus {
+  outline: none;
+}
+
+.ds-searcher__legal {
+  text-align: center;
+  justify-self: flex-end;
+  width: 45%;
+  color: gray;
+  font-weight: 300;
+  font-size: 0.7rem;
+  -webkit-transform: translateY(130%);
+          transform: translateY(130%);
+}
+
+.ds-searcher__legal a {
+  color: #09b5a5;
+}
+
+#url_copy {
+  border-radius: 1000px;
+  padding: 0.4rem 0.8rem 0.8rem 0.8rem;
+  background-color: #818181;
+}
+
+#url_copy > svg {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+body {
+  background-position-x: 90%;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, transparent), color-stop(50%, #09b5a5));
+  background-image: linear-gradient(-90deg, transparent 0%, transparent 50%, #09b5a5 50%);
+  background-size: 222%;
+}
+
+.slideAnimation {
+  -webkit-animation: slide .6s ease-in-out;
+          animation: slide .6s ease-in-out;
+}
+
+@-webkit-keyframes slide {
+  to {
+    background-position: 0%;
+  }
+}
+
+@keyframes slide {
+  to {
+    background-position: 0%;
+  }
+}
+
+.error {
+  background-color: red !important;
+  color: white !important;
+}
+/*# sourceMappingURL=app.css.map */

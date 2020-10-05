@@ -1,0 +1,119 @@
+$color-primary: #09b5a5;
+$color-grey: grey;
+$color-black: #000000;
+$color-white: #fff;
+$font-primary: "Poppins";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-primary;
+}
+.ds- {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  &searcher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__logo {
+      display: block;
+      width: 32rem;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__form {
+      display: block;
+    }
+    &__input {
+      margin: 1.5rem;
+      width: 45vw;
+      border: 2px solid rgba($color-black, 0.02);
+      border-radius: 1000px;
+      background-color: rgba($color-grey, 0.18);
+      color: rgba($color-grey, 0.6);
+      padding: 0.8rem 1.5rem;
+      margin-right: 0.5rem;
+      transition: background 0.3s ease;
+      &:hover {
+        filter: brightness(110%); 
+        background: $color-primary;
+        color: $color-white;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: 0px 8px 10px rgba($color-black, 0.1);
+       
+      }
+      &:hover + button {
+        background-color: rgba($color-white, 0.18);
+        color: rgba($color-primary, 1);
+        border: 2px solid $color-primary;
+      }
+    }
+    &__buttom {
+      padding: 0.8rem 1.5rem;
+      margin-right: 0.6rem;
+      border-radius: 1000px;
+      border: none;
+      background-color: rgba($color-primary, 1);
+      font-weight: 600;
+      color: rgba($color-white, 1);
+      transition: all 0.2s ease;
+      border: 2px solid transparent;
+      &:hover {
+        filter: brightness(110%);
+        box-shadow: 0px 8px 10px rgba($color-black, 0.15);
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &__legal {
+      text-align: center;
+      justify-self: flex-end;
+      width: 45%;
+      color: rgba($color-grey, 1);
+      font-weight: 300;
+      font-size: 0.7rem;
+      transform: translateY(130%);
+      a {
+        color: rgba($color-primary, 1);
+      }
+    }
+  }
+}
+#url {
+  &_copy {
+    border-radius: 1000px;
+    padding: 0.4rem 0.8rem 0.8rem 0.8rem;
+    background-color: rgb(129, 129, 129);
+    > svg {
+      transform: translateY(6px);
+    }
+  }
+}
+body{
+ 
+    background-position-x: 90%;;
+    background-image: linear-gradient(-90deg, transparent 0%, transparent 50%, $color-primary 50%);
+    background-size: 222%;
+}
+ 
+.slideAnimation{
+    animation: slide .6s ease-in-out;
+}
+@keyframes slide{
+to{
+    background-position: 0%;
+   }
+}
+
+.error{
+  background-color: red !important;
+  color:white !important;
+}
