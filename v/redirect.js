@@ -12,7 +12,7 @@ function getUrl(ed) {
 }
 function getPahtId (){
     let path = window.location.pathname;
-    path= new URL("http://henriquechigumane.github.io/cutter/v/djaf0a9h");
+    console.log(path);
     if(path=="/"){
         return "";
     }

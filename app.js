@@ -3,7 +3,7 @@ const btn = document.querySelector("#url_btn");
 // const btn_copy=document.querySelector("#url_copy");
 // const btn_new=document.querySelector("#url_new");
 const form = btn.closest("form");
-const myCutter = "http://henriquechigumane.github.io/cutter/v/";
+const myCutter = "http://misterpaps.me/cutter/v/";
 const body =document.querySelector("body");
 function getRandomId() {
   return (
@@ -11,7 +11,7 @@ function getRandomId() {
     Math.random().toString(32).substring(2, 6)
   );
 }
-console.log(getRandomId());
+ 
 function getUrl(e) {
   let url = input.value;
   let regexp=/((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/;
@@ -31,20 +31,21 @@ function run(e) {
   let url = getUrl();
   if(!url){
       return
+      console.log("re")
   }
   let id = getRandomId();
   sendData(url, id);
 }
 
 function sendData(url, id) {
-  //   let request = new XMLHttpRequest();
-  //   request.open("POST", "https://jsonbox.io/box_e095644c681d08a9e207");
-  //   request.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
-  //   let data = {
-  //     url: url,
-  //     id: id,
-  //   };
-  //   request.send(JSON.stringify(data));
+    let request = new XMLHttpRequest();
+    request.open("POST", "https://jsonbox.io/box_e095644c681d08a9e207");
+    request.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    let data = {
+      url: url,
+      id: id,
+    };
+    request.send(JSON.stringify(data));
   changeUi(id);
 }
 btn.addEventListener("click", run);
