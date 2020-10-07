@@ -99,10 +99,9 @@ body{
         background: $color-primary;
         color: $color-white;
       }
-      &:focus {
-        outline: none;
+      &:focus,&:hover{
+        outline: none;  
         box-shadow: 0px 8px 10px rgba($color-black, 0.1);
-       
       }
       &:hover + button {
         background-color: rgba($color-white, 0.18);
@@ -202,3 +201,10 @@ to{
   background-color: red !important;
   color:white !important;
 }
+.warning{
+  background-color: #e4c207 !important;
+  color:white !important;
+}
+
+
+
