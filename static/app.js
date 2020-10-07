@@ -130,7 +130,6 @@ const testFetch = async () => {
             internetConnection = false;
       }
 };
-
 setInterval(async () => {
       testFetch();
 }, 3000);
