@@ -120,7 +120,10 @@ function copy(url_copy) {
 
 const testFetch = async () => {
       try {
-            const response = await fetch("static/img/1px1.jpg");
+            const response = await fetch("https://misterpaps.me/cutter/static/img/1px1.jpg",{
+              method:"GET",
+              cache:"no-cache"
+            });
             internetConnection =
                   response.status >= 200 && response.status <= 299;
       } catch (error) {
