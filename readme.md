@@ -9,7 +9,7 @@
 
 #  Cutter
 
-This is my own javascript URL shorter, made with just html/css/javascript and [Jsonbox.io](https://jsonbox.io) (to save the URL and releted data for 30 days);
+A javascript URL shorter, made with just html/css/javascript and [Jsonbox.io](https://jsonbox.io) (to save the URL and releted data for 30 days);
 
  ## Demo
 > [
