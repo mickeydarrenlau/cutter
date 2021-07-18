@@ -56,7 +56,7 @@ function run(e) {
 
 function sendData(url, id) {
       let request = new XMLHttpRequest();
-      request.open("POST", "https://jsonbox.io/box_e095644c681d08a9e207");
+      request.open("POST", "https://jsonboxio.herokuapp.com/box_dc92870bd82e80cad889");
       request.setRequestHeader(
             "Content-Type",
             "application/json; charset=UTF-8"
