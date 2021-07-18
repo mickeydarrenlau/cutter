@@ -29,7 +29,7 @@ function redirecter(longURL) {
         window.location.href = longURL[0].url;
     }
     else {
-        window.location.href = "https://misterpaps.me/404"
+        window.location.href = "https://urlshort.darren.ga/404"
     }
 
 }
