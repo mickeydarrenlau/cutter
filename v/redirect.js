@@ -1,4 +1,4 @@
-endpoint = "https://jsonbox.io/box_e095644c681d08a9e207";
+endpoint = "https://jsonboxio.herokuapp.com/box_dc92870bd82e80cad889";
 
 function getUrl(ed) {
     fetch(ed, {
